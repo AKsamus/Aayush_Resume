@@ -1,0 +1,109 @@
+{
+    "basics": {
+        "name": "Shrungal Kulkarni",
+        "title": "Mechatronics Engineer",
+        "email": "alex.thompson@example.com",
+        "phone": "(555) 123-4567",
+        "location": "Seattle, WA",
+        "summary": "A passionate Mechatronics Engineer with 5+ years of experience in robotics, automation, and control systems. Specialized in developing innovative solutions for complex industrial automation challenges. Led multiple successful projects in IoT integration and smart manufacturing systems.",
+        "portfolio": "https://example.com/portfolio"
+    },
+    "experience": [
+        {
+            "title": "Senior Mechatronics Engineer",
+            "company": "TechRobotics Inc.",
+            "location": "Seattle, WA",
+            "period": "2021 - Present",
+            "achievements": [
+                "Led a team of 5 engineers in developing an automated warehouse system, improving efficiency by 40%",
+                "Designed and implemented predictive maintenance systems using IoT sensors, reducing downtime by 60%",
+                "Developed machine learning algorithms for robot path optimization, increasing throughput by 25%"
+            ]
+        },
+        {
+            "title": "Automation Engineer",
+            "company": "Smart Systems Ltd.",
+            "location": "Portland, OR",
+            "period": "2018 - 2021",
+            "achievements": [
+                "Implemented PLC-controlled automation systems for manufacturing lines",
+                "Reduced production errors by 35% through vision system integration",
+                "Designed and deployed 12 collaborative robot applications"
+            ]
+        }
+    ],
+    "education": {
+        "degree": "Master of Science in Mechatronics Engineering",
+        "university": "Pacific Northwest University",
+        "graduationYear": "2018"
+    },
+    "skills": {
+        "technical": [
+            "Robotics Control",
+            "PLC Programming",
+            "Industrial Automation",
+            "Motion Control",
+            "Computer Vision",
+            "IoT Integration",
+            "Machine Learning"
+        ],
+        "software": [
+            "MATLAB/Simulink",
+            "ROS",
+            "Python",
+            "C++",
+            "AutoCAD",
+            "SolidWorks"
+        ],
+        "languages": [
+            "English (Native)",
+            "German (Professional)",
+            "Japanese (Basic)"
+        ]
+    },
+    "projects": [
+        {
+            "name": "Smart Factory Automation System",
+            "description": "Developed a complete factory automation system with IoT integration, real-time monitoring, and predictive maintenance capabilities",
+            "technologies": ["Python", "ROS", "Docker", "AWS IoT", "TensorFlow"],
+            "link": "https://github.com/example/smart-factory"
+        },
+        {
+            "name": "Autonomous Mobile Robot",
+            "description": "Built an autonomous mobile robot for warehouse navigation using SLAM and path planning algorithms",
+            "technologies": ["ROS", "C++", "OpenCV", "Neural Networks"],
+            "link": "https://github.com/example/autonomous-robot"
+        },
+        {
+            "name": "Predictive Maintenance Platform",
+            "description": "Created a machine learning-based platform for predicting equipment failures in manufacturing systems",
+            "technologies": ["Python", "scikit-learn", "TensorFlow", "MongoDB"],
+            "link": "https://github.com/example/predictive-maintenance"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Professional Engineer (PE) - Mechatronics",
+            "issuer": "State Board of Engineering",
+            "date": "2020",
+            "link": "https://example.com/pe-certification"
+        },
+        {
+            "name": "AWS Certified Cloud Practitioner",
+            "issuer": "Amazon Web Services",
+            "date": "2021",
+            "link": "https://example.com/aws-certification"
+        },
+        {
+            "name": "ROS Developer Certification",
+            "issuer": "ROS Industrial Consortium",
+            "date": "2019",
+            "link": "https://example.com/ros-certification"
+        }
+    ],
+    "socialLinks": {
+        "github": "https://github.com/alexthompson",
+        "linkedin": "https://linkedin.com/in/alexthompson",
+        "twitter": "https://twitter.com/alexthompson"
+    }
+}

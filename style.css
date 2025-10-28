@@ -1,3 +1,23 @@
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --background-color: #f4f4f9;
+    --card-background: #fff;
+    --border-color: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-color: #0056b3;
+}
+
+[data-theme="dark"] {
+    --primary-color: #4da3ff;
+    --text-color: #e4e4e4;
+    --background-color: #1a1a1a;
+    --card-background: #2d2d2d;
+    --border-color: #404040;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-color: #66b3ff;
+}
+
 /* General reset */
 * {
     margin: 0;

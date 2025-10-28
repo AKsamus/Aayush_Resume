@@ -3,66 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechatronics Engineer Resume</title>
+    <title>Professional Resume</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em>Dark Mode</em>
+    </div>
+
     <div class="container">
-        <header>
-            <h1 class="name">John Doe</h1>
-            <p class="title">Mechatronics Engineer</p>
-            <p class="contact">Email: john.doe@example.com | Phone: (123) 456-7890</p>
-            <p class="location">Location: New York, NY</p>
-        </header>
+        <!-- Loading spinner -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Main content will be dynamically inserted here -->
+        <main id="main-content" style="display: none;">
+            <header>
+                <div class="profile-section">
+                    <div class="profile-image-container">
+                        <div class="profile-image" id="profile-image">
+                            <!-- Profile image will be set via JavaScript -->
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name" id="name"></h1>
+                        <p class="title" id="title"></p>
+                        <div class="contact-info" id="contact-info"></div>
+                    </div>
+                </div>
+                <div class="social-links" id="social-links">
+                    <!-- Social links will be dynamically added here -->
+                </div>
+            </header>
 
         <section class="summary">
-            <h2>Summary</h2>
-            <p>A passionate Mechatronics Engineer with experience in robotics, automation, and control systems. Skilled in both hardware and software design, including embedded systems, mechanical design, and data analysis. Strong problem-solving skills and a keen interest in innovative engineering solutions.</p>
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p id="summary"></p>
         </section>
 
         <section class="experience">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Mechatronics Engineer</h3>
-                <p class="company">XYZ Robotics, New York, NY | June 2021 - Present</p>
-                <ul>
-                    <li>Designed and developed robotic systems for industrial applications.</li>
-                    <li>Collaborated with cross-functional teams to improve automation processes.</li>
-                    <li>Developed control algorithms for robotic arms and automated machinery.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <h3>Mechanical Design Intern</h3>
-                <p class="company">ABC Mechatronics, New York, NY | Summer 2020</p>
-                <ul>
-                    <li>Assisted in the design and prototyping of mechanical components for automation systems.</li>
-                    <li>Used CAD software to create 3D models for various machine parts.</li>
-                    <li>Tested and refined mechanical designs for optimal performance.</li>
-                </ul>
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div id="experience-list">
+                <!-- Experience items will be dynamically added here -->
             </div>
         </section>
 
         <section class="education">
-            <h2>Education</h2>
-            <p>Bachelor of Science in Mechatronics Engineering</p>
-            <p>University of Technology | Graduated: 2021</p>
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div id="education-info">
+                <!-- Education info will be dynamically added here -->
+            </div>
         </section>
 
         <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Robotics Design & Control</li>
-                <li>Embedded Systems & Microcontrollers</li>
-                <li>C++, Python, MATLAB</li>
-                <li>CAD Software (SolidWorks, AutoCAD)</li>
-                <li>Automation Systems</li>
-                <li>Data Analysis & Signal Processing</li>
-            </ul>
+            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <div class="skills-container" id="skills-container">
+                <!-- Skills will be dynamically added here -->
+            </div>
         </section>
 
+        <section class="projects">
+            <h2><i class="fas fa-code"></i> Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically added here -->
+            </div>
+        </section>
+
+            <section class="certifications">
+                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                <div class="certifications-list" id="certifications-list">
+                    <!-- Certifications will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+
         <footer>
-            <p>Portfolio: <a href="http://www.johndoeportfolio.com">johndoeportfolio.com</a></p>
+            <p>Last Updated: <span id="last-updated"></span></p>
+            <button id="download-pdf" class="download-btn">
+                <i class="fas fa-download"></i> Download PDF
+            </button>
         </footer>
     </div>
 </body>
