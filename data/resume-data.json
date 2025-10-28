@@ -1,0 +1,163 @@
+{
+    "basics": {
+        "name": "Alex Thompson",
+        "title": "Diplom-Ingenieur Mechatronik",
+        "personalInfo": {
+            "dateOfBirth": "15.05.1995",
+            "placeOfBirth": "Seattle, USA",
+            "nationality": "American",
+            "familyStatus": "Single",
+            "address": {
+                "street": "Musterstraße 123",
+                "zip": "12345",
+                "city": "Berlin",
+                "country": "Deutschland"
+            }
+        },
+        "email": "alex.thompson@example.com",
+        "phone": "+49 123 45678900",
+        "photo": "./assets/profile_pic.jpg",
+        "summary": "Erfahrener Mechatronikingenieur mit 5-jähriger Berufserfahrung in Robotik, Automatisierung und Steuerungssystemen. Spezialisiert auf innovative Lösungen für komplexe Automatisierungsherausforderungen. Erfolgreiche Leitung mehrerer Projekte im Bereich IoT-Integration und intelligente Fertigungssysteme.",
+        "portfolio": "https://example.com/portfolio"
+    },
+    "berufserfahrung": [
+        {
+            "title": "Senior Mechatronikingenieur",
+            "company": "TechRobotics GmbH",
+            "location": "Berlin, Deutschland",
+            "period": "01.2021 - heute",
+            "responsibilities": [
+                "Leitung eines 5-köpfigen Ingenieurteams für die Entwicklung automatisierter Lagersysteme",
+                "Konzeption und Implementierung prädiktiver Wartungssysteme mittels IoT-Sensoren",
+                "Entwicklung von Machine-Learning-Algorithmen zur Roboter-Pfadoptimierung"
+            ],
+            "achievements": [
+                "40% Effizienzsteigerung im Lagermanagement",
+                "60% Reduzierung der Ausfallzeiten",
+                "25% Erhöhung des Durchsatzes"
+            ]
+        },
+        {
+            "title": "Automatisierungsingenieur",
+            "company": "Smart Systems GmbH",
+            "location": "München, Deutschland",
+            "period": "03.2018 - 12.2020",
+            "responsibilities": [
+                "Implementierung SPS-gesteuerter Automatisierungssysteme",
+                "Integration von Bildverarbeitungssystemen",
+                "Entwicklung kollaborativer Robotikanwendungen"
+            ],
+            "achievements": [
+                "35% Reduktion von Produktionsfehlern",
+                "Erfolgreiche Installation von 12 Cobot-Systemen",
+                "Optimierung der Produktionseffizienz"
+            ]
+        }
+    ],
+    "ausbildung": [
+        {
+            "type": "Hochschulbildung",
+            "degree": "Master of Science (M.Sc.) Mechatronik",
+            "institution": "Technische Universität Berlin",
+            "location": "Berlin, Deutschland",
+            "period": "10.2016 - 09.2018",
+            "thesis": "Entwicklung adaptiver Steuerungssysteme für kollaborative Roboter",
+            "grade": "1,3"
+        },
+        {
+            "type": "Schulbildung",
+            "institution": "Gymnasium am Stadtpark",
+            "location": "Berlin, Deutschland",
+            "degree": "Abitur",
+            "period": "09.2007 - 06.2016",
+            "grade": "1,8"
+        }
+    ],
+    "kenntnisse": {
+        "fachlich": [
+            "Robotersteuerung",
+            "SPS-Programmierung",
+            "Industrieautomatisierung",
+            "Bewegungssteuerung",
+            "Bildverarbeitung",
+            "IoT-Integration",
+            "Machine Learning"
+        ],
+        "software": [
+            "MATLAB/Simulink",
+            "ROS",
+            "Python",
+            "C++",
+            "AutoCAD",
+            "SolidWorks",
+            "Siemens TIA Portal",
+            "KUKA WorkVisual"
+        ],
+        "sprachen": [
+            "Englisch (Muttersprache)",
+            "Deutsch (Verhandlungssicher, C1)",
+            "Japanisch (Grundkenntnisse, A2)"
+        ]
+    },
+    "projekte": [
+        {
+            "name": "Industrie 4.0 Automatisierungssystem",
+            "period": "01.2022 - 06.2022",
+            "description": "Entwicklung eines ganzheitlichen Fabrikautomatisierungssystems mit IoT-Integration, Echtzeitüberwachung und vorausschauender Wartung",
+            "technologies": ["Python", "ROS", "Docker", "AWS IoT", "TensorFlow"],
+            "achievements": [
+                "30% Produktivitätssteigerung",
+                "50% reduzierte Wartungskosten"
+            ]
+        },
+        {
+            "name": "Autonomes Fahrerloses Transportsystem",
+            "period": "07.2021 - 12.2021",
+            "description": "Entwicklung eines autonomen Transportroboters für die Lagernavigation mittels SLAM und Pfadplanungsalgorithmen",
+            "technologies": ["ROS", "C++", "OpenCV", "Neural Networks"],
+            "achievements": [
+                "Erfolgreiche Implementation in 3 Lagerhallen",
+                "45% Effizienzsteigerung im Materialtransport"
+            ]
+        }
+    ],
+    "weiterbildung": [
+        {
+            "name": "Zertifizierter SPS-Techniker",
+            "issuer": "TÜV Rheinland",
+            "date": "03.2022",
+            "link": "https://example.com/tuv-cert"
+        },
+        {
+            "name": "AWS Certified Cloud Practitioner",
+            "issuer": "Amazon Web Services",
+            "date": "09.2021",
+            "link": "https://example.com/aws-certification"
+        },
+        {
+            "name": "KUKA Robotics Grundlagenzertifizierung",
+            "issuer": "KUKA College Deutschland",
+            "date": "06.2020",
+            "link": "https://example.com/kuka-cert"
+        }
+    ],
+    "sozialeMedien": {
+        "xing": "https://www.xing.com/profile/alex-thompson",
+        "linkedin": "https://linkedin.com/in/alexthompson",
+        "github": "https://github.com/alexthompson"
+    },
+    "zusatzqualifikationen": {
+        "führerschein": "Klasse B",
+        "ehrenamt": [
+            {
+                "organization": "Technisches Hilfswerk (THW)",
+                "role": "Freiwilliger Helfer",
+                "period": "2019 - heute"
+            }
+        ]
+    },
+    "unterschrift": {
+        "ort": "Berlin",
+        "datum": "28.10.2025"
+    }
+}

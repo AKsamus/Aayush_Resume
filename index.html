@@ -1,68 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechatronics Engineer Resume</title>
+    <title>Lebenslauf</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em>Dunkelmodus</em>
+    </div>
+
     <div class="container">
-        <header>
-            <h1 class="name">John Doe</h1>
-            <p class="title">Mechatronics Engineer</p>
-            <p class="contact">Email: john.doe@example.com | Phone: (123) 456-7890</p>
-            <p class="location">Location: New York, NY</p>
-        </header>
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+        </div>
 
-        <section class="summary">
-            <h2>Summary</h2>
-            <p>A passionate Mechatronics Engineer with experience in robotics, automation, and control systems. Skilled in both hardware and software design, including embedded systems, mechanical design, and data analysis. Strong problem-solving skills and a keen interest in innovative engineering solutions.</p>
-        </section>
+        <main id="main-content" style="display: none;">
+            <h1 class="cv-title">Lebenslauf</h1>
+            
+            <div class="two-column-layout">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <div class="profile-section">
+                        <div class="profile-image-container">
+                            <div class="profile-image" id="profile-image">
+                                <!-- Profile image will be set via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="personal-info" id="personal-info">
+                            <!-- Personal information will be added here -->
+                        </div>
+                    </div>
 
-        <section class="experience">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Mechatronics Engineer</h3>
-                <p class="company">XYZ Robotics, New York, NY | June 2021 - Present</p>
-                <ul>
-                    <li>Designed and developed robotic systems for industrial applications.</li>
-                    <li>Collaborated with cross-functional teams to improve automation processes.</li>
-                    <li>Developed control algorithms for robotic arms and automated machinery.</li>
-                </ul>
+                    <div class="contact-section">
+                        <h2><i class="fas fa-address-card"></i> Kontakt</h2>
+                        <div class="contact-info" id="contact-info"></div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h2><i class="fas fa-tools"></i> Kenntnisse</h2>
+                        <div id="skills-container"></div>
+                    </div>
+
+                    <div class="languages-section">
+                        <h2><i class="fas fa-language"></i> Sprachen</h2>
+                        <div id="languages-container"></div>
+                    </div>
+
+                    <div class="social-section">
+                        <h2><i class="fas fa-globe"></i> Online-Profile</h2>
+                        <div class="social-links" id="social-links"></div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <div class="header-section">
+                        <h1 class="name" id="name"></h1>
+                        <p class="title" id="title"></p>
+                    </div>
+
+                    <section class="summary-section">
+                        <h2><i class="fas fa-user"></i> Profil</h2>
+                        <p id="summary"></p>
+                    </section>
+
+                    <section class="experience-section">
+                        <h2><i class="fas fa-briefcase"></i> Berufserfahrung</h2>
+                        <div id="experience-list"></div>
+                    </section>
+
+                    <section class="education-section">
+                        <h2><i class="fas fa-graduation-cap"></i> Ausbildung</h2>
+                        <div id="education-info"></div>
+                    </section>
+
+                    <section class="projects-section">
+                        <h2><i class="fas fa-code"></i> Projekte</h2>
+                        <div id="projects-list"></div>
+                    </section>
+
+                    <section class="certifications-section">
+                        <h2><i class="fas fa-certificate"></i> Weiterbildung</h2>
+                        <div id="certifications-list"></div>
+                    </section>
+
+                    <section class="additional-section">
+                        <h2><i class="fas fa-plus-circle"></i> Zusatzqualifikationen</h2>
+                        <div id="additional-info"></div>
+                    </section>
+
+                    <div class="signature-section">
+                        <div id="signature-info"></div>
+                    </div>                </div>
             </div>
-
-            <div class="job">
-                <h3>Mechanical Design Intern</h3>
-                <p class="company">ABC Mechatronics, New York, NY | Summer 2020</p>
-                <ul>
-                    <li>Assisted in the design and prototyping of mechanical components for automation systems.</li>
-                    <li>Used CAD software to create 3D models for various machine parts.</li>
-                    <li>Tested and refined mechanical designs for optimal performance.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-            <p>Bachelor of Science in Mechatronics Engineering</p>
-            <p>University of Technology | Graduated: 2021</p>
-        </section>
-
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Robotics Design & Control</li>
-                <li>Embedded Systems & Microcontrollers</li>
-                <li>C++, Python, MATLAB</li>
-                <li>CAD Software (SolidWorks, AutoCAD)</li>
-                <li>Automation Systems</li>
-                <li>Data Analysis & Signal Processing</li>
-            </ul>
-        </section>
+        </main>
 
         <footer>
-            <p>Portfolio: <a href="http://www.johndoeportfolio.com">johndoeportfolio.com</a></p>
+            <p>Zuletzt aktualisiert: <span id="last-updated"></span></p>
+            <button id="download-pdf" class="download-btn">
+                <i class="fas fa-download"></i> Als PDF herunterladen
+            </button>
         </footer>
     </div>
 </body>
