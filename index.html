@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume</title>
+    <title>Lebenslauf</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="js/main.js" defer></script>
 </head>
@@ -15,80 +15,99 @@
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
         </label>
-        <em>Dark Mode</em>
+        <em>Dunkelmodus</em>
     </div>
 
     <div class="container">
-        <!-- Loading spinner -->
         <div id="loading" class="loading">
             <div class="spinner"></div>
         </div>
 
-        <!-- Main content will be dynamically inserted here -->
         <main id="main-content" style="display: none;">
-            <header>
-                <div class="profile-section">
-                    <div class="profile-image-container">
-                        <div class="profile-image" id="profile-image">
-                            <!-- Profile image will be set via JavaScript -->
+            <h1 class="cv-title">Lebenslauf</h1>
+            
+            <div class="two-column-layout">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <div class="profile-section">
+                        <div class="profile-image-container">
+                            <div class="profile-image" id="profile-image">
+                                <!-- Profile image will be set via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="personal-info" id="personal-info">
+                            <!-- Personal information will be added here -->
                         </div>
                     </div>
-                    <div class="profile-info">
-                        <h1 class="name" id="name"></h1>
-                        <p class="title" id="title"></p>
+
+                    <div class="contact-section">
+                        <h2><i class="fas fa-address-card"></i> Kontakt</h2>
                         <div class="contact-info" id="contact-info"></div>
                     </div>
+
+                    <div class="skills-section">
+                        <h2><i class="fas fa-tools"></i> Kenntnisse</h2>
+                        <div id="skills-container"></div>
+                    </div>
+
+                    <div class="languages-section">
+                        <h2><i class="fas fa-language"></i> Sprachen</h2>
+                        <div id="languages-container"></div>
+                    </div>
+
+                    <div class="social-section">
+                        <h2><i class="fas fa-globe"></i> Online-Profile</h2>
+                        <div class="social-links" id="social-links"></div>
+                    </div>
                 </div>
-                <div class="social-links" id="social-links">
-                    <!-- Social links will be dynamically added here -->
-                </div>
-            </header>
 
-        <section class="summary">
-            <h2><i class="fas fa-user"></i> About Me</h2>
-            <p id="summary"></p>
-        </section>
+                <!-- Right Column -->
+                <div class="right-column">
+                    <div class="header-section">
+                        <h1 class="name" id="name"></h1>
+                        <p class="title" id="title"></p>
+                    </div>
 
-        <section class="experience">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
-            <div id="experience-list">
-                <!-- Experience items will be dynamically added here -->
+                    <section class="summary-section">
+                        <h2><i class="fas fa-user"></i> Profil</h2>
+                        <p id="summary"></p>
+                    </section>
+
+                    <section class="experience-section">
+                        <h2><i class="fas fa-briefcase"></i> Berufserfahrung</h2>
+                        <div id="experience-list"></div>
+                    </section>
+
+                    <section class="education-section">
+                        <h2><i class="fas fa-graduation-cap"></i> Ausbildung</h2>
+                        <div id="education-info"></div>
+                    </section>
+
+                    <section class="projects-section">
+                        <h2><i class="fas fa-code"></i> Projekte</h2>
+                        <div id="projects-list"></div>
+                    </section>
+
+                    <section class="certifications-section">
+                        <h2><i class="fas fa-certificate"></i> Weiterbildung</h2>
+                        <div id="certifications-list"></div>
+                    </section>
+
+                    <section class="additional-section">
+                        <h2><i class="fas fa-plus-circle"></i> Zusatzqualifikationen</h2>
+                        <div id="additional-info"></div>
+                    </section>
+
+                    <div class="signature-section">
+                        <div id="signature-info"></div>
+                    </div>                </div>
             </div>
-        </section>
-
-        <section class="education">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div id="education-info">
-                <!-- Education info will be dynamically added here -->
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2><i class="fas fa-tools"></i> Skills</h2>
-            <div class="skills-container" id="skills-container">
-                <!-- Skills will be dynamically added here -->
-            </div>
-        </section>
-
-        <section class="projects">
-            <h2><i class="fas fa-code"></i> Projects</h2>
-            <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be dynamically added here -->
-            </div>
-        </section>
-
-            <section class="certifications">
-                <h2><i class="fas fa-certificate"></i> Certifications</h2>
-                <div class="certifications-list" id="certifications-list">
-                    <!-- Certifications will be dynamically added here -->
-                </div>
-            </section>
         </main>
 
         <footer>
-            <p>Last Updated: <span id="last-updated"></span></p>
+            <p>Zuletzt aktualisiert: <span id="last-updated"></span></p>
             <button id="download-pdf" class="download-btn">
-                <i class="fas fa-download"></i> Download PDF
+                <i class="fas fa-download"></i> Als PDF herunterladen
             </button>
         </footer>
     </div>

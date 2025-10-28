@@ -1,50 +1,86 @@
 {
     "basics": {
-        "name": "Shrungal Kulkarni",
-        "title": "Mechatronics Engineer",
+        "name": "Alex Thompson",
+        "title": "Diplom-Ingenieur Mechatronik",
+        "personalInfo": {
+            "dateOfBirth": "15.05.1995",
+            "placeOfBirth": "Seattle, USA",
+            "nationality": "American",
+            "familyStatus": "Single",
+            "address": {
+                "street": "Musterstraße 123",
+                "zip": "12345",
+                "city": "Berlin",
+                "country": "Deutschland"
+            }
+        },
         "email": "alex.thompson@example.com",
-        "phone": "(555) 123-4567",
-        "location": "Seattle, WA",
-        "summary": "A passionate Mechatronics Engineer with 5+ years of experience in robotics, automation, and control systems. Specialized in developing innovative solutions for complex industrial automation challenges. Led multiple successful projects in IoT integration and smart manufacturing systems.",
+        "phone": "+49 123 45678900",
+        "photo": "./assets/profile_pic.jpg",
+        "summary": "Erfahrener Mechatronikingenieur mit 5-jähriger Berufserfahrung in Robotik, Automatisierung und Steuerungssystemen. Spezialisiert auf innovative Lösungen für komplexe Automatisierungsherausforderungen. Erfolgreiche Leitung mehrerer Projekte im Bereich IoT-Integration und intelligente Fertigungssysteme.",
         "portfolio": "https://example.com/portfolio"
     },
-    "experience": [
+    "berufserfahrung": [
         {
-            "title": "Senior Mechatronics Engineer",
-            "company": "TechRobotics Inc.",
-            "location": "Seattle, WA",
-            "period": "2021 - Present",
+            "title": "Senior Mechatronikingenieur",
+            "company": "TechRobotics GmbH",
+            "location": "Berlin, Deutschland",
+            "period": "01.2021 - heute",
+            "responsibilities": [
+                "Leitung eines 5-köpfigen Ingenieurteams für die Entwicklung automatisierter Lagersysteme",
+                "Konzeption und Implementierung prädiktiver Wartungssysteme mittels IoT-Sensoren",
+                "Entwicklung von Machine-Learning-Algorithmen zur Roboter-Pfadoptimierung"
+            ],
             "achievements": [
-                "Led a team of 5 engineers in developing an automated warehouse system, improving efficiency by 40%",
-                "Designed and implemented predictive maintenance systems using IoT sensors, reducing downtime by 60%",
-                "Developed machine learning algorithms for robot path optimization, increasing throughput by 25%"
+                "40% Effizienzsteigerung im Lagermanagement",
+                "60% Reduzierung der Ausfallzeiten",
+                "25% Erhöhung des Durchsatzes"
             ]
         },
         {
-            "title": "Automation Engineer",
-            "company": "Smart Systems Ltd.",
-            "location": "Portland, OR",
-            "period": "2018 - 2021",
+            "title": "Automatisierungsingenieur",
+            "company": "Smart Systems GmbH",
+            "location": "München, Deutschland",
+            "period": "03.2018 - 12.2020",
+            "responsibilities": [
+                "Implementierung SPS-gesteuerter Automatisierungssysteme",
+                "Integration von Bildverarbeitungssystemen",
+                "Entwicklung kollaborativer Robotikanwendungen"
+            ],
             "achievements": [
-                "Implemented PLC-controlled automation systems for manufacturing lines",
-                "Reduced production errors by 35% through vision system integration",
-                "Designed and deployed 12 collaborative robot applications"
+                "35% Reduktion von Produktionsfehlern",
+                "Erfolgreiche Installation von 12 Cobot-Systemen",
+                "Optimierung der Produktionseffizienz"
             ]
         }
     ],
-    "education": {
-        "degree": "Master of Science in Mechatronics Engineering",
-        "university": "Pacific Northwest University",
-        "graduationYear": "2018"
-    },
-    "skills": {
-        "technical": [
-            "Robotics Control",
-            "PLC Programming",
-            "Industrial Automation",
-            "Motion Control",
-            "Computer Vision",
-            "IoT Integration",
+    "ausbildung": [
+        {
+            "type": "Hochschulbildung",
+            "degree": "Master of Science (M.Sc.) Mechatronik",
+            "institution": "Technische Universität Berlin",
+            "location": "Berlin, Deutschland",
+            "period": "10.2016 - 09.2018",
+            "thesis": "Entwicklung adaptiver Steuerungssysteme für kollaborative Roboter",
+            "grade": "1,3"
+        },
+        {
+            "type": "Schulbildung",
+            "institution": "Gymnasium am Stadtpark",
+            "location": "Berlin, Deutschland",
+            "degree": "Abitur",
+            "period": "09.2007 - 06.2016",
+            "grade": "1,8"
+        }
+    ],
+    "kenntnisse": {
+        "fachlich": [
+            "Robotersteuerung",
+            "SPS-Programmierung",
+            "Industrieautomatisierung",
+            "Bewegungssteuerung",
+            "Bildverarbeitung",
+            "IoT-Integration",
             "Machine Learning"
         ],
         "software": [
@@ -53,57 +89,75 @@
             "Python",
             "C++",
             "AutoCAD",
-            "SolidWorks"
+            "SolidWorks",
+            "Siemens TIA Portal",
+            "KUKA WorkVisual"
         ],
-        "languages": [
-            "English (Native)",
-            "German (Professional)",
-            "Japanese (Basic)"
+        "sprachen": [
+            "Englisch (Muttersprache)",
+            "Deutsch (Verhandlungssicher, C1)",
+            "Japanisch (Grundkenntnisse, A2)"
         ]
     },
-    "projects": [
+    "projekte": [
         {
-            "name": "Smart Factory Automation System",
-            "description": "Developed a complete factory automation system with IoT integration, real-time monitoring, and predictive maintenance capabilities",
+            "name": "Industrie 4.0 Automatisierungssystem",
+            "period": "01.2022 - 06.2022",
+            "description": "Entwicklung eines ganzheitlichen Fabrikautomatisierungssystems mit IoT-Integration, Echtzeitüberwachung und vorausschauender Wartung",
             "technologies": ["Python", "ROS", "Docker", "AWS IoT", "TensorFlow"],
-            "link": "https://github.com/example/smart-factory"
+            "achievements": [
+                "30% Produktivitätssteigerung",
+                "50% reduzierte Wartungskosten"
+            ]
         },
         {
-            "name": "Autonomous Mobile Robot",
-            "description": "Built an autonomous mobile robot for warehouse navigation using SLAM and path planning algorithms",
+            "name": "Autonomes Fahrerloses Transportsystem",
+            "period": "07.2021 - 12.2021",
+            "description": "Entwicklung eines autonomen Transportroboters für die Lagernavigation mittels SLAM und Pfadplanungsalgorithmen",
             "technologies": ["ROS", "C++", "OpenCV", "Neural Networks"],
-            "link": "https://github.com/example/autonomous-robot"
-        },
-        {
-            "name": "Predictive Maintenance Platform",
-            "description": "Created a machine learning-based platform for predicting equipment failures in manufacturing systems",
-            "technologies": ["Python", "scikit-learn", "TensorFlow", "MongoDB"],
-            "link": "https://github.com/example/predictive-maintenance"
+            "achievements": [
+                "Erfolgreiche Implementation in 3 Lagerhallen",
+                "45% Effizienzsteigerung im Materialtransport"
+            ]
         }
     ],
-    "certifications": [
+    "weiterbildung": [
         {
-            "name": "Professional Engineer (PE) - Mechatronics",
-            "issuer": "State Board of Engineering",
-            "date": "2020",
-            "link": "https://example.com/pe-certification"
+            "name": "Zertifizierter SPS-Techniker",
+            "issuer": "TÜV Rheinland",
+            "date": "03.2022",
+            "link": "https://example.com/tuv-cert"
         },
         {
             "name": "AWS Certified Cloud Practitioner",
             "issuer": "Amazon Web Services",
-            "date": "2021",
+            "date": "09.2021",
             "link": "https://example.com/aws-certification"
         },
         {
-            "name": "ROS Developer Certification",
-            "issuer": "ROS Industrial Consortium",
-            "date": "2019",
-            "link": "https://example.com/ros-certification"
+            "name": "KUKA Robotics Grundlagenzertifizierung",
+            "issuer": "KUKA College Deutschland",
+            "date": "06.2020",
+            "link": "https://example.com/kuka-cert"
         }
     ],
-    "socialLinks": {
-        "github": "https://github.com/alexthompson",
+    "sozialeMedien": {
+        "xing": "https://www.xing.com/profile/alex-thompson",
         "linkedin": "https://linkedin.com/in/alexthompson",
-        "twitter": "https://twitter.com/alexthompson"
+        "github": "https://github.com/alexthompson"
+    },
+    "zusatzqualifikationen": {
+        "führerschein": "Klasse B",
+        "ehrenamt": [
+            {
+                "organization": "Technisches Hilfswerk (THW)",
+                "role": "Freiwilliger Helfer",
+                "period": "2019 - heute"
+            }
+        ]
+    },
+    "unterschrift": {
+        "ort": "Berlin",
+        "datum": "28.10.2025"
     }
 }
