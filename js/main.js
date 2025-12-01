@@ -1,6 +1,6 @@
 async function loadResumeData() {
     try {
-        const response = await fetch('./resume-data.json');
+        const response = await fetch('./data/resume-data.json');
         if (!response.ok) throw new Error('Network response was not ok');
         return await response.json();
     } catch (err) {
