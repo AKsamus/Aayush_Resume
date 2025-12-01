@@ -1,163 +1,166 @@
 {
     "basics": {
-        "name": "Alex Thompson",
-        "title": "Diplom-Ingenieur Mechatronik",
+        "name": "Aayush Kshirsagar",
+        "title": "Student Master's Mechatronics and Robotics",
         "personalInfo": {
-            "dateOfBirth": "15.05.1995",
-            "placeOfBirth": "Seattle, USA",
-            "nationality": "American",
+            "dateOfBirth": "23.01.2000",
+            "placeOfBirth": "Wardha, India",
+            "nationality": "Indian",
             "familyStatus": "Single",
             "address": {
-                "street": "Musterstraße 123",
-                "zip": "12345",
-                "city": "Berlin",
-                "country": "Deutschland"
+                "street": "Martin Luther Ring 38",
+                "zip": "98574",
+                "city": "Schmalkalden",
+                "state": "Thuringia",
+                "country": "Germany"
             }
         },
-        "email": "alex.thompson@example.com",
-        "phone": "+49 123 45678900",
+        "email": "aayush.kshirsagar@zohomail.in",
+        "phone": "+49 15256174863",
         "photo": "./assets/profile_pic.jpg",
-        "summary": "Erfahrener Mechatronikingenieur mit 5-jähriger Berufserfahrung in Robotik, Automatisierung und Steuerungssystemen. Spezialisiert auf innovative Lösungen für komplexe Automatisierungsherausforderungen. Erfolgreiche Leitung mehrerer Projekte im Bereich IoT-Integration und intelligente Fertigungssysteme.",
-        "portfolio": "https://example.com/portfolio"
+        "summary": "Motivated student pursuing a Master's in Mechatronics and Robotics with a solid 4 years of experience in IT systems development, automation, and software engineering. Strong foundation in programming, system integration, and cloud-based solutions, with a keen interest in applying these skills to robotics and industrial automation.",
+        "portfolio": "https://github.com/AKsamus/Mechatronics-Embedded-Portfolio/"
     },
-    "berufserfahrung": [
+    "workExperience": [
         {
-            "title": "Senior Mechatronikingenieur",
-            "company": "TechRobotics GmbH",
-            "location": "Berlin, Deutschland",
-            "period": "01.2021 - heute",
+            "title": "IT Systems Engineer",
+            "company": "Tata Consultancy Services Limited",
+            "location": "Nagpur, India",
+            "period": "07.2021 - 07.2025",
             "responsibilities": [
-                "Leitung eines 5-köpfigen Ingenieurteams für die Entwicklung automatisierter Lagersysteme",
-                "Konzeption und Implementierung prädiktiver Wartungssysteme mittels IoT-Sensoren",
-                "Entwicklung von Machine-Learning-Algorithmen zur Roboter-Pfadoptimierung"
+                "Created Python automation scripts to streamline daily administrative tasks and reduce manual workload",
+                "Developed proof-of-concept (POC) solutions for large-scale system changes, including impact analysis on security and sustainability",
+                "Ensured 24/7 operational reliability of the Strategy Platform through proactive monitoring and issue resolution",
+                "Designed and deployed automation workflows using AWS services for hosting scripts and backend processes",
+                "Managed version control and deployment pipelines using GitHub, ensuring stable and secure code integration"
             ],
             "achievements": [
-                "40% Effizienzsteigerung im Lagermanagement",
-                "60% Reduzierung der Ausfallzeiten",
-                "25% Erhöhung des Durchsatzes"
+                "Reduced manual operational workload by automating recurring tasks using Python",
+                "Improved platform reliability through automated monitoring and health-check scripts",
+                "Successfully implemented multiple POCs that guided long-term technical decisions",
+                "Optimized internal workflows by hosting automation code on AWS and integrating GitHub pipelines"
             ]
         },
-        {
-            "title": "Automatisierungsingenieur",
-            "company": "Smart Systems GmbH",
-            "location": "München, Deutschland",
-            "period": "03.2018 - 12.2020",
-            "responsibilities": [
-                "Implementierung SPS-gesteuerter Automatisierungssysteme",
-                "Integration von Bildverarbeitungssystemen",
-                "Entwicklung kollaborativer Robotikanwendungen"
-            ],
-            "achievements": [
-                "35% Reduktion von Produktionsfehlern",
-                "Erfolgreiche Installation von 12 Cobot-Systemen",
-                "Optimierung der Produktionseffizienz"
-            ]
-        }
+    
     ],
-    "ausbildung": [
+    "education": [
         {
-            "type": "Hochschulbildung",
-            "degree": "Master of Science (M.Sc.) Mechatronik",
-            "institution": "Technische Universität Berlin",
-            "location": "Berlin, Deutschland",
-            "period": "10.2016 - 09.2018",
-            "thesis": "Entwicklung adaptiver Steuerungssysteme für kollaborative Roboter",
-            "grade": "1,3"
+            "type": "Master's of Engineering Degree",
+            "degree": "Mechatronics and Robotics",
+            "institution": "Schmalkalden University of Applied Sciences",
+            "location": "Thuringia, Germany",
+            "period": "10.2025 - Expected 04.2027",
+            "grade": "In Progress"
         },
         {
-            "type": "Schulbildung",
-            "institution": "Gymnasium am Stadtpark",
-            "location": "Berlin, Deutschland",
-            "degree": "Abitur",
-            "period": "09.2007 - 06.2016",
-            "grade": "1,8"
+            "type": "Bachelor's of Engineering Degree",
+            "degree": "Automobile",
+            "institution": "Government College of Engineering and Research, Pune",
+            "location": "Maharashtra, India",
+            "period": "08.2017 - 07.2021",
+            "grade": "1.9 German Equivalent"
         }
     ],
-    "kenntnisse": {
-        "fachlich": [
-            "Robotersteuerung",
-            "SPS-Programmierung",
-            "Industrieautomatisierung",
-            "Bewegungssteuerung",
-            "Bildverarbeitung",
-            "IoT-Integration",
-            "Machine Learning"
+    "skills": {
+        "technical": [
+            "Microcontroller Programming",
+            "Cloud Computing",
+            "System Integration",
+            "IoT (Internet of Things)"
         ],
         "software": [
             "MATLAB/Simulink",
-            "ROS",
             "Python",
-            "C++",
             "AutoCAD",
             "SolidWorks",
-            "Siemens TIA Portal",
-            "KUKA WorkVisual"
+            "GitHub",
+            "AWS (Amazon Web Services)",
+            "Blender"
         ],
-        "sprachen": [
-            "Englisch (Muttersprache)",
-            "Deutsch (Verhandlungssicher, C1)",
-            "Japanisch (Grundkenntnisse, A2)"
+        "languages": [
+            "English (C1)",
+            "German (A1)",
+            "Marathi (Native)",
+            "Hindi (Native)"
         ]
     },
-    "projekte": [
+    "projects": [
         {
-            "name": "Industrie 4.0 Automatisierungssystem",
-            "period": "01.2022 - 06.2022",
-            "description": "Entwicklung eines ganzheitlichen Fabrikautomatisierungssystems mit IoT-Integration, Echtzeitüberwachung und vorausschauender Wartung",
-            "technologies": ["Python", "ROS", "Docker", "AWS IoT", "TensorFlow"],
+            "name": "Remote Light Control System",
+            "period": "04.2025 - 06.2025",
+            "description": "Controling a switch safely from anywhere in the world using personal VPN.",
+            "technologies": ["ESP32", "Raspberry Pi 4", "VPN", "SG 90 Servo Motor", "HTML", "3D Printing", "Blender", "IoT", "Networking"],
             "achievements": [
-                "30% Produktivitätssteigerung",
-                "50% reduzierte Wartungskosten"
+                "Successfully implemented remote light control using VPN for secure access",
+                "Designed and 3D printed custom enclosures for hardware components",
+                "Developed a user-friendly web interface for controlling the light system",
+                "Gained hands-on experience with IoT and embedded systems",
+                "Improved understanding of networking and security protocols"
             ]
         },
         {
-            "name": "Autonomes Fahrerloses Transportsystem",
-            "period": "07.2021 - 12.2021",
-            "description": "Entwicklung eines autonomen Transportroboters für die Lagernavigation mittels SLAM und Pfadplanungsalgorithmen",
-            "technologies": ["ROS", "C++", "OpenCV", "Neural Networks"],
+            "name": "Solar Powered Battery Charger",
+            "period": "04.2025 - 05.2025",
+            "description": "Solar powered battery chager to charge Li-ion battery as cleanly as possible.",
+            "technologies": ["BMS", "Regulator IC", "Solar Pannel", "Basic Electronics", "Circuit Design"],
             "achievements": [
-                "Erfolgreiche Implementation in 3 Lagerhallen",
-                "45% Effizienzsteigerung im Materialtransport"
+                "Designed and built a solar-powered battery charger circuit",
+                "Implemented a Battery Management System (BMS) for safe charging",
+                "Optimized the charging efficiency using appropriate regulator ICs",
+                "Gained practical experience in renewable energy systems and electronics"
+            ]
+        },
+        {
+            "name": "Role Based Access Control",
+            "period": "07.2024 - 01.2025",
+            "description": "Developed a Role Based Access Control (RBAC) system to manage user permissions and enhance security within an organization.",
+            "technologies": ["AWS Services", "Python", "Snowflake", "GitHub", "Strategy Platform", "Graph API", "SQL DBM"],
+            "achievements": [
+                "Successfully designed and implemented an RBAC system using AWS services",
+                "Automated user role assignments and permission management with Python scripts",
+                "Replaced the RBAC system with existing organizational platforms for seamless access control",
+                "Enhanced security protocols by ensuring appropriate access levels for different user roles",
+                "Gained experience in cloud computing and database management"
             ]
         }
     ],
-    "weiterbildung": [
+    "certifications": [
         {
-            "name": "Zertifizierter SPS-Techniker",
-            "issuer": "TÜV Rheinland",
-            "date": "03.2022",
-            "link": "https://example.com/tuv-cert"
+            "name": "Industrial Robotics",
+            "issuer": "UdemyBusiness",
+            "date": "09.2024",
+            "link": "ude.my/UC-7c596511-fce5-4bcb-b525-0c936dac72ae"
         },
         {
-            "name": "AWS Certified Cloud Practitioner",
-            "issuer": "Amazon Web Services",
-            "date": "09.2021",
-            "link": "https://example.com/aws-certification"
-        },
+            "name": "Robotics&Mechatronics1: Machine Theory and Production Line",
+            "issuer": "UdemyBusiness",
+            "date": "09.2024",
+            "link": "ude.my/UC-e52a2d08-37a6-4fa2-86dd-cd4ebf4062ee"
+        }
         {
-            "name": "KUKA Robotics Grundlagenzertifizierung",
-            "issuer": "KUKA College Deutschland",
-            "date": "06.2020",
-            "link": "https://example.com/kuka-cert"
+            "name": "Associate Cloud Engineer",
+            "issuer": "Google",
+            "date": "03.2023",
+            "link": "https://google.accredible.com/0b0da942-d294-4975-b762-8cb2dbeea373?key=f50d4cf285220b3d1b801e7955e92ef6c1d2faf1780783e295fddddc1b7db6df"
         }
     ],
-    "sozialeMedien": {
-        "xing": "https://www.xing.com/profile/alex-thompson",
-        "linkedin": "https://linkedin.com/in/alexthompson",
-        "github": "https://github.com/alexthompson"
+    "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/aayush-kshirsagar-90b934169/",
+        "github": "https://github.com/AKsamus"
     },
-    "zusatzqualifikationen": {
-        "führerschein": "Klasse B",
-        "ehrenamt": [
+    "additionalQualifications": {
+        "Highest chess rating": "1724",
+        "volunteerExperience": [
             {
-                "organization": "Technisches Hilfswerk (THW)",
-                "role": "Freiwilliger Helfer",
-                "period": "2019 - heute"
+                "organization": "E-Vidyaloka",
+                "role": "Volunteer Mathetics Teacher",
+                "description": "Taught mathematics to underprivileged children in rural India through online sessions, helping to improve their academic performance and confidence in the subject.",
+                "period": "2021 - 2022"
             }
         ]
     },
-    "unterschrift": {
-        "ort": "Berlin",
-        "datum": "28.10.2025"
+    "signature": {
+        "place": "Schmalkalden",
+        "date": "01.12.2025"
     }
 }
