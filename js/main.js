@@ -1,31 +1,44 @@
-async function loadResume() {
-    const res = await fetch("data/resume-data.json");
-    const data = await res.json();
+document.addEventListener("DOMContentLoaded", () => {
+    loadResume();
+});
 
-    loadHeader(data.basics);
-    loadWorkExperience(data.workExperience);
-    loadEducation(data.education);
-    loadSkills(data.skills);
-    loadProjects(data.projects);
-    loadCertifications(data.certifications);
-    loadAdditionalQualifications(data.additionalQualifications);
-    //loadSignature(data.signature);
+async function loadResume() {
+    try {
+        const res = await fetch("data/resume-data.json");
+        const data = await res.json();
+
+        console.log("Resume data loaded:", data);
+
+        if (data.basics) loadHeader(data.basics);
+        if (data.workExperience) loadWorkExperience(data.workExperience);
+        if (data.education) loadEducation(data.education);
+        if (data.skills) loadSkills(data.skills);
+        if (data.projects) loadProjects(data.projects);
+        if (data.certifications) loadCertifications(data.certifications);
+        if (data.additionalQualifications) loadAdditionalQualifications(data.additionalQualifications);
+        // Signature removed intentionally
+    } catch (err) {
+        console.error("Error loading resume:", err);
+    }
 }
 
-/* ---------------- HEADER WITH CONTACT & SOCIAL ---------------- */
+/* ---------------- HEADER ---------------- */
 function loadHeader(basics) {
-    document.getElementById("header").innerHTML = `
+    const header = document.getElementById("header");
+    if (!header) return;
+
+    header.innerHTML = `
         <div class="header-left">
             <h1>${basics.name || "Your Name"}</h1>
             <h2>${basics.title || "Your Title"}</h2>
-            
+
             <div class="header-top-row">
                 <div class="contact-icons">
-                    <p><span class="icon">📧</span> <a href="mailto:${basics.email}">${basics.email || "email@example.com"}</a></p>
-                    <p><span class="icon">📞</span> <a href="tel:${basics.phone}">${basics.phone || "+1234567890"}</a></p>
+                    <p><span class="icon">📧</span> <a href="mailto:${basics.email || ''}">${basics.email || "email@example.com"}</a></p>
+                    <p><span class="icon">📞</span> <a href="tel:${basics.phone || ''}">${basics.phone || "+1234567890"}</a></p>
                     <p><span class="icon">🌐</span> <a href="${basics.portfolio || "#"}" target="_blank" style="color:#1a73e8;">${basics.portfolio || "#"}</a></p>
-                    <p><span class="icon">💼</span> <a href="${basics.socialMedia?.linkedin || "#"}" target="_blank" style="color:#1a73e8;">${basics.socialMedia?.linkedin || "#"}</a></p>
-                    <p><span class="icon">🐱</span> <a href="${basics.socialMedia?.github || "#"}" target="_blank" style="color:#1a73e8;">${basics.socialMedia?.github || "#"}</a></p>
+                    <p><span class="icon">💼</span> <a href="${basics.socialMedia?.linkedin || "#"}" target="_blank" style="color:#1a73e8;">LinkedIn: ${basics.socialMedia?.linkedin || "#"}</a></p>
+                    <p><span class="icon">🐱</span> <a href="${basics.socialMedia?.github || "#"}" target="_blank" style="color:#1a73e8;">GitHub: ${basics.socialMedia?.github || "#"}</a></p>
                 </div>
 
                 <div class="header-right">
@@ -36,8 +49,11 @@ function loadHeader(basics) {
     `;
 }
 
-/* ---------------- OTHER SECTIONS ---------------- */
+/* ---------------- WORK EXPERIENCE ---------------- */
 function loadWorkExperience(jobs) {
+    const container = document.getElementById("workExperience");
+    if (!container) return;
+
     let html = `<h2>Work Experience</h2>`;
     jobs.forEach(job => {
         html += `
@@ -49,10 +65,14 @@ function loadWorkExperience(jobs) {
             <ul>${job.achievements.map(a => `<li>${a}</li>`).join("")}</ul>
         `;
     });
-    document.getElementById("workExperience").innerHTML = html;
+    container.innerHTML = html;
 }
 
+/* ---------------- EDUCATION ---------------- */
 function loadEducation(education) {
+    const container = document.getElementById("education");
+    if (!container) return;
+
     let html = `<h2>Education</h2>`;
     education.forEach(ed => {
         html += `
@@ -61,20 +81,27 @@ function loadEducation(education) {
             <p>Grade: ${ed.grade}</p>
         `;
     });
-    document.getElementById("education").innerHTML = html;
+    container.innerHTML = html;
 }
 
+/* ---------------- SKILLS ---------------- */
 function loadSkills(skills) {
-    let html = `
+    const container = document.getElementById("skills");
+    if (!container) return;
+
+    container.innerHTML = `
         <h2>Skills</h2>
         <p><strong>Technical:</strong> ${skills.technical.join(", ")}</p>
         <p><strong>Software:</strong> ${skills.software.join(", ")}</p>
         <p><strong>Languages:</strong> ${skills.languages.join(", ")}</p>
     `;
-    document.getElementById("skills").innerHTML = html;
 }
 
+/* ---------------- PROJECTS ---------------- */
 function loadProjects(projects) {
+    const container = document.getElementById("projects");
+    if (!container) return;
+
     let html = `<h2>Projects</h2>`;
     projects.forEach(p => {
         html += `
@@ -88,10 +115,14 @@ function loadProjects(projects) {
             <ul>${p.achievements.map(a => `<li>${a}</li>`).join("")}</ul>
         `;
     });
-    document.getElementById("projects").innerHTML = html;
+    container.innerHTML = html;
 }
 
+/* ---------------- CERTIFICATIONS ---------------- */
 function loadCertifications(certs) {
+    const container = document.getElementById("certifications");
+    if (!container) return;
+
     let html = `<h2>Certifications</h2>`;
     certs.forEach(c => {
         html += `
@@ -100,10 +131,14 @@ function loadCertifications(certs) {
             <p><a href="${c.link}" target="_blank">${c.link}</a></p>
         `;
     });
-    document.getElementById("certifications").innerHTML = html;
+    container.innerHTML = html;
 }
 
+/* ---------------- ADDITIONAL QUALIFICATIONS ---------------- */
 function loadAdditionalQualifications(extra) {
+    const container = document.getElementById("additionalQualifications");
+    if (!container) return;
+
     let html = `<h2>Additional Qualifications</h2>`;
     html += `<p><strong>Highest Chess Rating:</strong> ${extra["Highest chess rating"]}</p>`;
     html += `<h3>Volunteer Experience</h3>`;
@@ -114,15 +149,5 @@ function loadAdditionalQualifications(extra) {
             <p>${v.period}</p>
         `;
     });
-    document.getElementById("additionalQualifications").innerHTML = html;
+    container.innerHTML = html;
 }
-
-function loadSignature(sig) {
-    document.getElementById("signature").innerHTML = `
-        <h2>Signature</h2>
-        <p>Place: ${sig.place}</p>
-        <p>Date: ${sig.date}</p>
-    `;
-}
-
-loadResume();
