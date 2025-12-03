@@ -4,89 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="theme-toggle">
-            <input type="checkbox" id="theme-toggle" />
-            <div class="slider round"></div>
-        </label>
-        <em>Dark Mode</em>
-    </div>
-
     <div class="container">
-        <div id="loading" class="loading">
-            <div class="spinner"></div>
-        </div>
+        <!-- Header Section -->
+        <section id="header"></section>
 
-        <main id="main-content" style="display:none;">
-            <header class="header-section">
-                <h1 id="name"></h1>
-                <p id="title"></p>
-            </header>
-
-            <section class="personal-section">
-                <div class="profile-image" id="profile-image"></div>
-                <div id="personal-info"></div>
-            </section>
-
-            <section class="contact-section">
-                <h2><i class="fas fa-address-card"></i> Contact</h2>
-                <div id="contact-info"></div>
-            </section>
-
-            <section class="social-section">
-                <h2><i class="fas fa-globe"></i> Social Media</h2>
-                <div id="social-links"></div>
-            </section>
-
-            <section class="summary-section">
-                <h2><i class="fas fa-user"></i> Summary</h2>
-                <p id="summary"></p>
-            </section>
-
-            <section class="experience-section">
-                <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
-                <div id="experience-list"></div>
-            </section>
-
-            <section class="education-section">
-                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-                <div id="education-list"></div>
-            </section>
-
-            <section class="skills-section">
-                <h2><i class="fas fa-tools"></i> Skills</h2>
-                <div id="skills-list"></div>
-            </section>
-
-            <section class="projects-section">
-                <h2><i class="fas fa-code"></i> Projects</h2>
-                <div id="projects-list"></div>
-            </section>
-
-            <section class="certifications-section">
-                <h2><i class="fas fa-certificate"></i> Certifications</h2>
-                <div id="certifications-list"></div>
-            </section>
-
-            <section class="additional-section">
-                <h2><i class="fas fa-plus-circle"></i> Additional Qualifications</h2>
-                <div id="additional-info"></div>
-            </section>
-
-            <div class="signature-section">
-                <p id="signature-info"></p>
-            </div>
-        </main>
-
-        <footer>
-            <p>Last updated: <span id="last-updated"></span></p>
-            <button id="download-pdf"><i class="fas fa-download"></i> Download as PDF</button>
-        </footer>
+        <!-- Other Sections -->
+        <section id="workExperience"></section>
+        <section id="education"></section>
+        <section id="skills"></section>
+        <section id="projects"></section>
+        <section id="certifications"></section>
+        <section id="additionalQualifications"></section>
+        <!-- section id="signature"section-->
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

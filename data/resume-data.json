@@ -18,8 +18,12 @@
         "email": "aayush.kshirsagar@zohomail.in",
         "phone": "+49 15256174863",
         "photo": "./assets/profile_pic.jpg",
+        "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/aayush-kshirsagar-90b934169/",
+        "github": "https://github.com/AKsamus"
+        },
         "summary": "Motivated student pursuing a Master's in Mechatronics and Robotics with a solid 4 years of experience in IT systems development, automation, and software engineering. Strong foundation in programming, system integration, and cloud-based solutions, with a keen interest in applying these skills to robotics and industrial automation.",
-        "portfolio": "https://github.com/AKsamus/Mechatronics-Embedded-Portfolio/"
+        "portfolio": "https://aksamus.github.io/Aayush_Resume/"
     },
     "workExperience": [
         {
@@ -28,11 +32,11 @@
             "location": "Nagpur, India",
             "period": "07.2021 - 07.2025",
             "responsibilities": [
-                "Created Python automation scripts to streamline daily administrative tasks and reduce manual workload",
-                "Developed proof-of-concept (POC) solutions for large-scale system changes, including impact analysis on security and sustainability",
-                "Ensured 24/7 operational reliability of the Strategy Platform through proactive monitoring and issue resolution",
-                "Designed and deployed automation workflows using AWS services for hosting scripts and backend processes",
-                "Managed version control and deployment pipelines using GitHub, ensuring stable and secure code integration"
+                "Automated daily administrative tasks with Python, reducing manual workload",
+                "Developed POCs for large-scale system changes, analyzing security and sustainability impacts",
+                "Maintained 24/7 operational reliability of the Strategy Platform through proactive monitoring",
+                "Designed and deployed AWS-based automation workflows for scripts and backend processes",
+                "Managed GitHub version control and deployment pipelines, ensuring stable and secure code"
             ],
             "achievements": [
                 "Reduced manual operational workload by automating recurring tasks using Python",
@@ -40,7 +44,7 @@
                 "Successfully implemented multiple POCs that guided long-term technical decisions",
                 "Optimized internal workflows by hosting automation code on AWS and integrating GitHub pipelines"
             ]
-        },
+        }
     
     ],
     "education": [
@@ -63,18 +67,20 @@
     ],
     "skills": {
         "technical": [
-            "Microcontroller Programming",
+            "Programming",
             "Cloud Computing",
             "System Integration",
-            "IoT (Internet of Things)"
+            "IoT"
         ],
         "software": [
-            "MATLAB/Simulink",
             "Python",
-            "AutoCAD",
-            "SolidWorks",
+            "Linux",
             "GitHub",
             "AWS (Amazon Web Services)",
+            "AutoCAD",
+            "SolidWorks",
+            "C#",
+            "MATLAB/Simulink",
             "Blender"
         ],
         "languages": [
@@ -91,11 +97,10 @@
             "description": "Controling a switch safely from anywhere in the world using personal VPN.",
             "technologies": ["ESP32", "Raspberry Pi 4", "VPN", "SG 90 Servo Motor", "HTML", "3D Printing", "Blender", "IoT", "Networking"],
             "achievements": [
-                "Successfully implemented remote light control using VPN for secure access",
-                "Designed and 3D printed custom enclosures for hardware components",
-                "Developed a user-friendly web interface for controlling the light system",
-                "Gained hands-on experience with IoT and embedded systems",
-                "Improved understanding of networking and security protocols"
+                "Implemented remote light control with secure VPN access",
+                "Designed and 3D-printed custom enclosures for hardware components",
+                "Developed a user-friendly web interface for system control",
+                "Enhanced IoT and networking skills through embedded systems integration"
             ]
         },
         {
@@ -104,10 +109,7 @@
             "description": "Solar powered battery chager to charge Li-ion battery as cleanly as possible.",
             "technologies": ["BMS", "Regulator IC", "Solar Pannel", "Basic Electronics", "Circuit Design"],
             "achievements": [
-                "Designed and built a solar-powered battery charger circuit",
-                "Implemented a Battery Management System (BMS) for safe charging",
-                "Optimized the charging efficiency using appropriate regulator ICs",
-                "Gained practical experience in renewable energy systems and electronics"
+                "Applied practical experience in renewable energy systems and electronics"
             ]
         },
         {
@@ -116,11 +118,9 @@
             "description": "Developed a Role Based Access Control (RBAC) system to manage user permissions and enhance security within an organization.",
             "technologies": ["AWS Services", "Python", "Snowflake", "GitHub", "Strategy Platform", "Graph API", "SQL DBM"],
             "achievements": [
-                "Successfully designed and implemented an RBAC system using AWS services",
-                "Automated user role assignments and permission management with Python scripts",
-                "Replaced the RBAC system with existing organizational platforms for seamless access control",
-                "Enhanced security protocols by ensuring appropriate access levels for different user roles",
-                "Gained experience in cloud computing and database management"
+                "Designed and implemented an RBAC system using AWS services",
+                "Automated role assignments and permission management via Python scripts",
+                "Enhanced organizational security by enforcing proper access levels"
             ]
         }
     ],
@@ -136,7 +136,7 @@
             "issuer": "UdemyBusiness",
             "date": "09.2024",
             "link": "ude.my/UC-e52a2d08-37a6-4fa2-86dd-cd4ebf4062ee"
-        }
+        },
         {
             "name": "Associate Cloud Engineer",
             "issuer": "Google",
@@ -154,7 +154,7 @@
             {
                 "organization": "E-Vidyaloka",
                 "role": "Volunteer Mathetics Teacher",
-                "description": "Taught mathematics to underprivileged children in rural India through online sessions, helping to improve their academic performance and confidence in the subject.",
+                "description": "Taught math to underprivileged children online, boosting performance and confidence",
                 "period": "2021 - 2022"
             }
         ]
