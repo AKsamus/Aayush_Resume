@@ -30,13 +30,14 @@ function loadHeader(basics) {
     header.innerHTML = `
         <div class="header-left">
             <h1>${basics.name || "Your Name"}</h1>
-            <h2>${basics.title || "Your Title"}</h2>
-
+            <h2>${basics.title || "Your Title"} | ${basics.personalInfo.familyStatus} | ${basics.personalInfo.dateOfBirth}</h2>
+            <p>${basics.summary || "A brief summary about yourself."}</p> 
             <div class="header-top-row">
                 <div class="contact-icons">
                     <p><span class="icon">📧</span> <a href="mailto:${basics.email || ''}">${basics.email || "email@example.com"}</a></p>
                     <p><span class="icon">📞</span> <a href="tel:${basics.phone || ''}">${basics.phone || "+1234567890"}</a></p>
-                    <p><span class="icon">🌐</span> <a href="${basics.portfolio || "#"}" target="_blank" style="color:#1a73e8;">${basics.portfolio || "#"}</a></p>
+                    <p><span class="icon">📫</span>  <a target="_blank" style="color:#1a73e8;">${basics.personalInfo.address.street}, ${basics.personalInfo.address.city}, ${basics.personalInfo.address.zip}</p>
+                    <p><span class="icon">🌐</span> <a href="${basics.portfolio || "#"}" target="_blank" style="color:#1a73e8;">Website: ${basics.portfolio || "#"}</a></p>
                     <p><span class="icon">💼</span> <a href="${basics.socialMedia?.linkedin || "#"}" target="_blank" style="color:#1a73e8;">LinkedIn: ${basics.socialMedia?.linkedin || "#"}</a></p>
                     <p><span class="icon">🐱</span> <a href="${basics.socialMedia?.github || "#"}" target="_blank" style="color:#1a73e8;">GitHub: ${basics.socialMedia?.github || "#"}</a></p>
                 </div>
@@ -77,8 +78,7 @@ function loadEducation(education) {
     education.forEach(ed => {
         html += `
             <h3>${ed.degree} – ${ed.institution}</h3>
-            <p>${ed.location} | ${ed.period}</p>
-            <p>Grade: ${ed.grade}</p>
+            <p>${ed.location} | ${ed.period} | Grade: ${ed.grade}</p>
         `;
     });
     container.innerHTML = html;
@@ -92,7 +92,6 @@ function loadSkills(skills) {
     container.innerHTML = `
         <h2>Skills</h2>
         <p><strong>Technical:</strong> ${skills.technical.join(", ")}</p>
-        <p><strong>Software:</strong> ${skills.software.join(", ")}</p>
         <p><strong>Languages:</strong> ${skills.languages.join(", ")}</p>
     `;
 }
@@ -140,7 +139,7 @@ function loadAdditionalQualifications(extra) {
     if (!container) return;
 
     let html = `<h2>Additional Qualifications</h2>`;
-    html += `<p><strong>Highest Chess Rating:</strong> ${extra["Highest chess rating"]}</p>`;
+    html += `<p><strong>Highest Chess Rating♘:</strong> ${extra["Highest chess rating"]}</p>`;
     html += `<h3>Volunteer Experience</h3>`;
     extra.volunteerExperience.forEach(v => {
         html += `
