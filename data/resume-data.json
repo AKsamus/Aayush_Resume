@@ -32,11 +32,10 @@
             "location": "Nagpur, India",
             "period": "07.2021 - 07.2025",
             "responsibilities": [
-                "Automated daily administrative tasks with Python, reducing manual workload",
-                "Developed POCs for large-scale system changes, analyzing security and sustainability impacts",
-                "Maintained 24/7 operational reliability of the Strategy Platform through proactive monitoring",
-                "Designed and deployed AWS-based automation workflows for scripts and backend processes",
-                "Managed GitHub version control and deployment pipelines, ensuring stable and secure code"
+                "Developing POCs for large-scale system changes, analyzing security and sustainability impacts",
+                "Maintaining 24/7 operational reliability of the Strategy Platform through proactive monitoring",
+                "Designing and deploying AWS-based automation workflows for scripts and backend processes",
+                "Managing GitHub version control and deployment pipelines, ensuring stable and secure code"
             ],
             "achievements": [
                 "Reduced manual operational workload by automating recurring tasks using Python",
