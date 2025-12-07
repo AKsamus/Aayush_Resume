@@ -22,7 +22,7 @@
         "linkedin": "https://www.linkedin.com/in/aayush-kshirsagar-90b934169/",
         "github": "https://github.com/AKsamus"
         },
-        "summary": "Motivated student pursuing a Master's in Mechatronics and Robotics with a solid 4 years of experience in IT systems development, automation, and software engineering. Strong foundation in programming, system integration, and cloud-based solutions, with a keen interest in applying these skills to robotics and industrial automation.",
+        "summary": "Master’s student in Mechatronics and Robotics with 4 years of IT and automation experience, skilled in programming, system integration, and cloud solutions, now applying these strengths to robotics.",
         "portfolio": "https://aksamus.github.io/Aayush_Resume/"
     },
     "workExperience": [
@@ -32,11 +32,10 @@
             "location": "Nagpur, India",
             "period": "07.2021 - 07.2025",
             "responsibilities": [
-                "Automated daily administrative tasks with Python, reducing manual workload",
-                "Developed POCs for large-scale system changes, analyzing security and sustainability impacts",
-                "Maintained 24/7 operational reliability of the Strategy Platform through proactive monitoring",
-                "Designed and deployed AWS-based automation workflows for scripts and backend processes",
-                "Managed GitHub version control and deployment pipelines, ensuring stable and secure code"
+                "Developing POCs for large-scale system changes, analyzing security and sustainability impacts",
+                "Maintaining 24/7 operational reliability of the Strategy Platform through proactive monitoring",
+                "Designing and deploying AWS-based automation workflows for scripts and backend processes",
+                "Managing GitHub version control and deployment pipelines, ensuring stable and secure code"
             ],
             "achievements": [
                 "Reduced manual operational workload by automating recurring tasks using Python",
@@ -53,7 +52,7 @@
             "degree": "Mechatronics and Robotics",
             "institution": "Schmalkalden University of Applied Sciences",
             "location": "Thuringia, Germany",
-            "period": "10.2025 - Expected 04.2027",
+            "period": "10.2025 - 04.2027*",
             "grade": "In Progress"
         },
         {
@@ -62,26 +61,24 @@
             "institution": "Government College of Engineering and Research, Pune",
             "location": "Maharashtra, India",
             "period": "08.2017 - 07.2021",
-            "grade": "1.9 German Equivalent"
+            "grade": "1.9"
         }
     ],
     "skills": {
         "technical": [
-            "Programming",
-            "Cloud Computing",
-            "System Integration",
-            "IoT"
-        ],
-        "software": [
             "Python",
             "Linux",
             "GitHub",
             "AWS (Amazon Web Services)",
             "AutoCAD",
             "SolidWorks",
-            "C#",
+            "C++",
             "MATLAB/Simulink",
-            "Blender"
+            "Blender",
+            "Cura",
+            "Microcontrollers",
+            "Agile Methodologies",
+            "Jira"
         ],
         "languages": [
             "English (C1)",
@@ -129,13 +126,13 @@
             "name": "Industrial Robotics",
             "issuer": "UdemyBusiness",
             "date": "09.2024",
-            "link": "ude.my/UC-7c596511-fce5-4bcb-b525-0c936dac72ae"
+            "link": "https://www.udemy.com/certificate/UC-7c596511-fce5-4bcb-b525-0c936dac72ae/"
         },
         {
             "name": "Robotics&Mechatronics1: Machine Theory and Production Line",
             "issuer": "UdemyBusiness",
             "date": "09.2024",
-            "link": "ude.my/UC-e52a2d08-37a6-4fa2-86dd-cd4ebf4062ee"
+            "link": "https://www.udemy.com/certificate/UC-e52a2d08-37a6-4fa2-86dd-cd4ebf4062ee/"
         },
         {
             "name": "Associate Cloud Engineer",
