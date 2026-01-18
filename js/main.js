@@ -137,9 +137,9 @@ function loadWorkExperience(jobs) {
     jobs.forEach(job => {
         html += `
             <p><b>${job.title}@${job.company}</b> | ${job.location} | ${job.period}</p>
-            <p>Responsibilities:</p>
+            <p><u>Responsibilities</u>:</p>
             <ul>${job.responsibilities.map(r => `<li>${r}</li>`).join("")}</ul>
-            <p>Achievements:</p>
+            <p><u>Achievements</u>:</p>
             <ul>${job.achievements.map(a => `<li>${a}</li>`).join("")}</ul>
         `;
     });
