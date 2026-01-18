@@ -1,19 +1,20 @@
-/* ------------------------------------------
-   Global Reset & Base
-------------------------------------------- */
+/* ================= RESET ================= */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.35;
     color: #222;
     background-color: #f7f7f7;
     padding: 20px;
+
+    /* page margins for clean resume layout */
+    margin: 20px 40px;
 }
 
 /* Container */
@@ -26,65 +27,71 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Header Section */
+section {
+    padding: 15px 0;
+}
+
+/* ================= HEADER ================= */
 #header {
     display: flex;
-    flex-direction: column; /* Name/title on top */
-    gap: 10px;
-    margin-bottom: 40px;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
 }
 
-.header-left h1 {
-    font-size: 2rem;
-    margin-bottom: 5px;
+#header .header-left {
+    flex: 0 0 auto;
 }
 
-.header-left h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #555;
-    margin-bottom: 15px;
+#header .header-left-center,
+#header .header-right-center,
+#header .header-right {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
-/* Flex row for contact + profile pic */
-.header-top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* vertical center */
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.header-right img {
+/* profile image elliptical */
+#header img {
     width: 120px;
     height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 8px;
 }
 
-/* Contact icons column */
-.contact-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+/* name & title */
+#header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
 }
 
-.contact-icons p {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.contact-icons .icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+#header h2 {
     font-size: 1rem;
+    font-weight: normal;
+    color: #555;
 }
 
-/* Links */
+/* header rows */
+#header p {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* icons */
+.icon svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* links */
 a {
-    color: #1a73e8;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -92,109 +99,175 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Section Titles */
-h2 {
-    font-size: 1.5rem;
-    color: #333;
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 5px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+/* ================= SUMMARY + SKILLS ================= */
+#skills {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
 }
 
-h3 {
-    font-size: 1.2rem;
-    color: #111;
-    margin-bottom: 4px;
+#skills .header-left,
+#skills .header-right {
+    flex: 1;
 }
 
+#skills h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+/* ================= STACKED SECTIONS ================= */
+#education,
+#workExperience,
+#languages,
+#projects,
+#certifications,
+#hobbies {
+    padding-top: 8px;
+}
+
+/* section headers with line after text */
+section h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+section h2::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #aaa; /* slightly darker line */
+    margin-left: 10px;
+}
+
+/* lists */
 ul {
-    margin-top: 5px;
-    padding-left: 20px;
+    padding-left: 15px;
+    list-style-type: disc;
+    margin: 4px 0 10px;
 }
 
-ul li {
-    margin-bottom: 4px;
+li {
+    margin-bottom: 2px; /* tighter bullet spacing */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .header-top-row {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header-right img {
-        width: 120px;
-        height: 150px;
-    }
+/* spacing only between complete entries in sections */
+section > .entry {
+    margin-bottom: 6px; /* small gap after full entry */
 }
 
-/* ------------------------------------------
-   Print Optimization
-------------------------------------------- */
+/* ================= PRINT PRESERVE LAYOUT ================= */
 @media print {
+
+    /* Body & container */
     body {
-        background-color: white;
-        color: black;
+        background: #fff !important; /* white page */
+        color: #000 !important;
         padding: 0;
-        font-size: 12pt;
-        line-height: 1.3;
+        margin: 0;
+        -webkit-print-color-adjust: exact; /* preserve colors */
+        print-color-adjust: exact;
     }
 
     .container {
-        max-width: 100%;
-        padding: 20px;
-        box-shadow: none;
-        border-radius: 0;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 20px !important;
+        box-shadow: none !important; /* remove shadow */
+        border-radius: 0 !important;
+        background: #fff !important;
     }
 
-    h2 {
-        font-size: 13pt;
-        border-bottom: 1px solid #000;
-        padding-bottom: 3px;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
-
-    h3 {
-        font-size: 12pt;
-        margin-bottom: 2px;
-    }
-
-    p, ul li {
-        font-size: 11pt;
-        margin-bottom: 2px;
-    }
-
-    ul {
-        padding-left: 15px;
-    }
-
+    /* Keep sections intact */
     section {
-        page-break-inside: avoid;
+        page-break-inside: avoid !important;
+        padding: 0 !important;
     }
 
-    /* Header flex for print */
+    /* Header flex layout preserved */
     #header {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .header-top-row {
         display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important; /* vertical center */
-        gap: 10px;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 10px 5px !important;
+        padding-bottom: 0px !important;
     }
 
-    .contact-icons {
-        flex-direction: column;
+    #header img {
+        width: 84px !important;
+        height: 105px !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
     }
 
-    .header-right img {
-        width: 120px;
-        height: 150px;
+    #header h1 {
+        font-size: 16px !important;
+        margin-bottom: 4px !important;
+    }
+
+    #header h2 {
+        font-size: 1rem !important;
+        color: #555 !important;
+    }
+
+    #skills {
+        display: flex !important;
+        gap: 10px !important;
+    }
+
+    #skills .header-left,
+    #skills .header-right {
+        flex: 1 !important;
+    }
+
+    /* Lists & entries */
+    ul {
+        list-style-type: disc !important;
+        padding-left: 15px !important;
+    }
+
+    li {
+        margin-bottom: 2px !important;
+    }
+
+    p {
+        font-size: 12px !important;  /* sets paragraph text to 12px */
+        line-height: 1.35 !important;   /* optional for readability */
+    }
+
+    section > .entry {
+        margin-bottom: 6px !important;
+        page-break-inside: avoid !important;
+    }
+    section {
+    margin-bottom: 20px; /* gap between sections */
+}
+
+    /* Links - remove underline but keep URL if needed */
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    a::after {
+
+        font-size: 0.9em !important;
+        color: #000 !important;
+    }
+
+    /* Avoid breaking flex in print */
+    #header .header-left-center,
+    #header .header-right-center,
+    #header .header-right,
+    #skills h2 {
+        min-width: 0;
+        flex: 1;
+    }
+
+    /* Section headers */
+    section h2::after {
+        background: #000 !important; /* make line print darker */
     }
 }
