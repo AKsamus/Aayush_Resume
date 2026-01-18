@@ -1,7 +1,7 @@
 {
     "basics": {
-        "name": "Aayush Kshirsagar",
-        "title": "Student Master's Mechatronics and Robotics",
+        "name": "Aayush Dattatray Kshirsagar",
+        "title": "M.Engg Mechatronics and Robotics",
         "personalInfo": {
             "dateOfBirth": "23.01.2000",
             "placeOfBirth": "Wardha, India",
@@ -18,12 +18,21 @@
         "email": "aayush.kshirsagar@zohomail.in",
         "phone": "+49 15256174863",
         "photo": "./assets/profile_pic.jpg",
-        "socialMedia": {
-        "linkedin": "https://www.linkedin.com/in/aayush-kshirsagar-90b934169/",
-        "github": "https://github.com/AKsamus"
+        "socialMedia": {   
+        "linkedin": {
+            "name": "/in/aayush-kshirsagar", 
+            "link": "https://www.linkedin.com/in/aayush-kshirsagar/"
         },
-        "summary": "Master’s student in Mechatronics and Robotics with 4 years of IT and automation experience, skilled in programming, system integration, and cloud solutions, now applying these strengths to robotics.",
-        "portfolio": "https://aksamus.github.io/Aayush_Resume/"
+        "github": {
+            "name": "github.com/AKsamus",
+            "link": "https://github.com/AKsamus"
+        }
+        },
+        "summary": "Master’s student in Mechatronics and Robotics Engineering with 4 years of automation experience in IT, skilled in programming, system integration, and cloud solutions. Passionate about robotics, IoT, and embedded systems, with hands-on project experience. Strong problem-solver and team collaborator, eager to contribute to innovative engineering solutions.",
+        "portfolio": {
+            "name": "github.io/Aayush_Resume/",
+            "link": "https://aksamus.github.io/Aayush_Resume/"
+        }
     },
     "workExperience": [
         {
@@ -32,16 +41,31 @@
             "location": "Nagpur, India",
             "period": "07.2021 - 07.2025",
             "responsibilities": [
-                "Developing POCs for large-scale system changes, analyzing security and sustainability impacts",
+                "Developing POCs for large-scale system affecting 100 000+ users and 1000+ stores",
                 "Maintaining 24/7 operational reliability of the Strategy Platform through proactive monitoring",
-                "Designing and deploying AWS-based automation workflows for scripts and backend processes",
-                "Managing GitHub version control and deployment pipelines, ensuring stable and secure code"
+                "Designing and deploying automation scripts and workflows on AWS-based cloud infrastructure",
+                "Ensuring secure data handling and compliance with organizational policies",
+                "Collaborating with cross-functional teams to deliver robust IT solutions"
             ],
             "achievements": [
-                "Reduced manual operational workload by automating recurring tasks using Python",
-                "Improved platform reliability through automated monitoring and health-check scripts",
-                "Successfully implemented multiple POCs that guided long-term technical decisions",
-                "Optimized internal workflows by hosting automation code on AWS and integrating GitHub pipelines"
+                "Reduced 60% of manual operational workload using Python",
+                "Downtime shortened by 80% through proactive monitoring scripts",
+                "Designed a logic to onboard external vendors without exposing sensitive data",
+                "Became the trusted Python specialist, contributing to faster development and improved code quality"
+            ]
+        },
+        {
+            "title": "Volunteer Mathematics Teacher",
+            "company": "E-Vidyaloka",
+            "location": "Pune, India",
+            "period": "07.2018 - 07.2019",
+            "responsibilities": [
+                "Conducting online mathematics classes for underprivileged students in rural India",
+                "Preparing lesson plans and educational materials to enhance student understanding"
+            ],
+            "achievements": [
+                "Improved students' math skills, leading to better academic performance",
+                "Satisfaction of giving back to the community through education"
             ]
         }
     
@@ -49,19 +73,21 @@
     "education": [
         {
             "type": "Master's of Engineering Degree",
-            "degree": "Mechatronics and Robotics",
+            "degree": "Master of Engineering in Mechatronics and Robotics",
             "institution": "Schmalkalden University of Applied Sciences",
-            "location": "Thuringia, Germany",
-            "period": "10.2025 - 04.2027*",
-            "grade": "In Progress"
+            "location": "Schmalkalden, Germany",
+            "period": "10.2025 - present",
+            "grade": "In Progress",
+            "special": ["Communication Systems", "Rapid Prototyping"]
         },
         {
             "type": "Bachelor's of Engineering Degree",
-            "degree": "Automobile",
-            "institution": "Government College of Engineering and Research, Pune",
-            "location": "Maharashtra, India",
+            "degree": "Bachelor of Engineering in Automobile",
+            "institution": "Government College of Engineering and Research",
+            "location": "Pune, India",
             "period": "08.2017 - 07.2021",
-            "grade": "1.9"
+            "grade": "1.9",
+            "special": ["BAJA 2019", "CAD Modelling", "Manufacturing Processes"]
         }
     ],
     "skills": {
@@ -69,7 +95,7 @@
             "Python",
             "Linux",
             "GitHub",
-            "AWS (Amazon Web Services)",
+            "AWS",
             "AutoCAD",
             "SolidWorks",
             "C++",
@@ -78,9 +104,20 @@
             "Cura",
             "Microcontrollers",
             "Agile Methodologies",
-            "Jira"
+            "Jira",
+            "ServiceNow"
         ],
-        "languages": [
+        "soft": [
+            "Problem Solving",
+            "Team Collaboration",
+            "Effective Communication",
+            "Adaptability",
+            "Time Management",
+            "Critical Thinking"
+        ]
+    },
+    "languages":{
+         "languages":[
             "English (C1)",
             "German (A2)",
             "Marathi (Native)",
@@ -89,28 +126,28 @@
     },
     "projects": [
         {
-            "name": "Remote Light Control System",
+            "name": "Remote Light Control System@Home",
             "period": "04.2025 - 06.2025",
-            "description": "Controling a switch safely from anywhere in the world using personal VPN.",
+            "description": "Controling a switch safely from anywhere in the world over personal VPN",
             "technologies": ["ESP32", "Raspberry Pi 4", "VPN", "SG 90 Servo Motor", "HTML", "3D Printing", "Blender", "IoT", "Networking"],
             "achievements": [
-                "Implemented remote light control with secure VPN access",
+                "Implemented remote light control with secure personally created VPN access",
                 "Designed and 3D-printed custom enclosures for hardware components",
                 "Developed a user-friendly web interface for system control",
                 "Enhanced IoT and networking skills through embedded systems integration"
             ]
         },
         {
-            "name": "Solar Powered Battery Charger",
+            "name": "Solar Powered Battery Charger@Home",
             "period": "04.2025 - 05.2025",
-            "description": "Solar powered battery chager to charge Li-ion battery as cleanly as possible.",
+            "description": "Solar powered battery chager to charge Li-ion battery as cleanly as possible",
             "technologies": ["BMS", "Regulator IC", "Solar Pannel", "Basic Electronics", "Circuit Design"],
             "achievements": [
                 "Applied practical experience in renewable energy systems and electronics"
             ]
         },
         {
-            "name": "Role Based Access Control",
+            "name": "Role Based Access Control@TCS",
             "period": "07.2024 - 01.2025",
             "description": "Developed a Role Based Access Control (RBAC) system to manage user permissions and enhance security within an organization.",
             "technologies": ["AWS Services", "Python", "Snowflake", "GitHub", "Strategy Platform", "Graph API", "SQL DBM"],
@@ -135,27 +172,36 @@
             "link": "https://www.udemy.com/certificate/UC-e52a2d08-37a6-4fa2-86dd-cd4ebf4062ee/"
         },
         {
-            "name": "Associate Cloud Engineer",
+            "name": "Associate Cloud Engineer",
             "issuer": "Google",
             "date": "03.2023",
             "link": "https://google.accredible.com/0b0da942-d294-4975-b762-8cb2dbeea373?key=f50d4cf285220b3d1b801e7955e92ef6c1d2faf1780783e295fddddc1b7db6df"
+        },
+        {
+            "name": "Machine Learning, ML",
+            "issuer": "NPTEL",
+            "date": "04.2020",
+            "link": ""
+        },
+        {
+            "name": "The Joy of Computing using Python",
+            "issuer": "NPTEL",
+            "date": " 07.2018 ",
+            "link": ""
         }
     ],
     "socialMedia": {
-        "linkedin": "https://www.linkedin.com/in/aayush-kshirsagar-90b934169/",
+        "linkedin": "https://www.linkedin.com/in/aayush-kshirsagar/",
         "github": "https://github.com/AKsamus"
     },
-    "additionalQualifications": {
-        "Highest chess rating": "1724",
-        "volunteerExperience": [
-            {
-                "organization": "E-Vidyaloka",
-                "role": "Volunteer Mathetics Teacher",
-                "description": "Taught math to underprivileged children online, boosting performance and confidence",
-                "period": "2021 - 2022"
-            }
-        ]
-    },
+    "hobbies": [
+        "Chess(1724)",
+        "Flute",
+        "Teaching",
+        "Reading",
+        "Coin Collecting",
+        "Sports"
+    ],
     "signature": {
         "place": "Schmalkalden",
         "date": "01.12.2025"
