@@ -58,7 +58,7 @@
             "title": "Volunteer Mathematics Teacher",
             "company": "E-Vidyaloka",
             "location": "Pune, India",
-            "period": "07.2018 - 07.2019",
+            "period": "07.2021 - 07.2022",
             "responsibilities": [
                 "Conducting online mathematics classes for underprivileged students in rural India",
                 "Preparing lesson plans and educational materials to enhance student understanding"
@@ -181,6 +181,12 @@
             "name": "Machine Learning, ML",
             "issuer": "NPTEL",
             "date": "04.2020",
+            "link": ""
+        },
+        {
+            "name": "Indian Engineering Olympiad",
+            "issuer": "GATEFORUM",
+            "date": " 02.2019 ",
             "link": ""
         },
         {
