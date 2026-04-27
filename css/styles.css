@@ -62,7 +62,7 @@ section {
 /* name & title */
 #header h1 {
     font-size: 1.8rem;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 #header h2 {
@@ -84,8 +84,8 @@ section {
 
 /* icons */
 .icon svg {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     flex-shrink: 0;
 }
 
@@ -102,7 +102,7 @@ a:hover {
 /* ================= SUMMARY + SKILLS ================= */
 #skills {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     padding-bottom: 10px;
 }
 
@@ -242,7 +242,7 @@ section > .entry {
         page-break-inside: avoid !important;
     }
     section {
-    margin-bottom: 20px; /* gap between sections */
+    margin-bottom: 10px; /* gap between sections */
 }
 
     /* Links - remove underline but keep URL if needed */
