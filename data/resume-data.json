@@ -170,6 +170,16 @@
                 "Automated role assignments and permission management via Python scripts",
                 "Enhanced organizational security by enforcing proper access levels"
             ]
+        },
+        {
+            "name": "Engine CAD modeling Software@Bachalorer's Thesis",
+            "period": "02.2020 - 02.2021",
+            "description": "Developed a CAD modeling software for engine design. The software gives an Engine CAD model based on the input parameters.",
+            "technologies": ["Python", "OpenSCADA"],
+            "achievements": [
+                "Enforcing industrial standards in engine design through software development",
+                "Bypassed the need for manual CAD modeling, reducing design time by 50%"
+            ]
         }
     ],
     "certifications": [
