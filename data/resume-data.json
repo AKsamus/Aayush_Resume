@@ -64,8 +64,22 @@
                 "Preparing lesson plans and educational materials to enhance student understanding"
             ],
             "achievements": [
-                "Improved students' math skills, leading to better academic performance",
                 "Satisfaction of giving back to the community through education"
+            ]
+        },
+        {
+            "title": "Intern - Design Engineer",
+            "company": "Kalyani Technoforge Limited",
+            "location": "Pune, India",
+            "period": "02.2021 - 03.2021",
+            "responsibilities": [
+                "Understanding how different departments of a forging company work together to deliver the final product",
+                "Follow instructions of senior engineers to design components for forging machines using AutoCAD and SolidWorks",
+                "Find any possible bottlenecks in the production line and suggest improvements"
+            ],
+            "achievements": [
+                "Learned how a forging company operates and how to design components for manufacturing",
+                "Created a downtime analyzer to find the root cause of machine breakdowns, reducing downtime by 30%"
             ]
         }
     
@@ -77,7 +91,7 @@
             "institution": "Schmalkalden University of Applied Sciences",
             "location": "Schmalkalden, Germany",
             "period": "10.2025 - present",
-            "grade": "2.4",
+            "grade": "2.5",
             "special": ["Communication Systems", "Rapid Prototyping"]
         },
         {
