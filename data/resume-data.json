@@ -91,7 +91,7 @@
             "institution": "Schmalkalden University of Applied Sciences",
             "location": "Schmalkalden, Germany",
             "period": "10.2025 - present",
-            "grade": "2.5",
+            "grade": "2.4",
             "special": ["Communication Systems", "Rapid Prototyping"]
         },
         {
@@ -106,20 +106,16 @@
     ],
     "skills": {
         "technical": [
-            "Python",
+            "Python/C/C++",
             "Linux",
             "GitHub",
             "AWS",
-            "AutoCAD",
-            "SolidWorks",
-            "C++",
+            "ROS2/Gazebo",
+            "SolidWorks/Blender",
             "MATLAB/Simulink",
-            "Blender",
-            "Cura",
             "Microcontrollers",
             "Agile Methodologies",
-            "Jira",
-            "ServiceNow"
+            "Jira/ServiceNow"
         ],
         "soft": [
             "Problem Solving",
@@ -225,11 +221,10 @@
         "github": "https://github.com/AKsamus"
     },
     "hobbies": [
-        "Chess(1724)",
+        "Chess",
         "Flute",
         "Teaching",
         "Reading",
-        "Coin Collecting",
         "Sports"
     ],
     "signature": {
