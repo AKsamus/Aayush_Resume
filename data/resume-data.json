@@ -106,7 +106,8 @@
     ],
     "skills": {
         "technical": [
-            "Python/C/C++",
+            "Python",
+            "C/C++",
             "Linux",
             "GitHub",
             "AWS",
